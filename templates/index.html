@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+      <div class="container">
+        <div class="form-group w-50">
+          <input
+            class="form-control mb-1"
+            type="text"
+            name="video_url"
+            placeholder="Put your youtube video link or Id here"
+          />
+          <input type="submit" value="Get" class="btn btn-outline-success" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
+
+{% endblock %}
